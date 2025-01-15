@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --background-color: white;
+    --text-color: black;
+    --element-color: white;
+    margin: 0;
+    font-family: Nunito, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+body.dark {
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: white;
+    --element-color: hsl(209, 23%, 22%);
+}
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+.header-container {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    padding-inline: 24px;
+
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-inline: auto;
+
+}
+
+.title {
+    font-weight: 800;
+}
+
+main {
+    padding: 24px;
+}
+
+.country-details-container {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 32px;
+}
+
+.countries-container {
+    max-width: 1280px;
+    margin-inline: auto;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.country-card {
+    display: inline-block;
+    width: 250px;
+    border-radius: 4px;
+    box-shadow: 0px 0 8px 0px rgba(0, 0, 0, 0.2);
+    padding-bottom: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.country-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.card-title {
+    font-size: 24px;
+    margin-block: 16px;
+
+}
+
+.card-text {
+    padding-inline: 16px;
+}
+
+.country-card img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.card-text p {
+    margin-block: 8px;
+}
+
+
+
+.back-button {
+    box-shadow: 0 0 9px 0 rgba(-1, 0, 0, 0.2);
+    padding: 5px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.country-details {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 64px;
+
+}
+
+.country-details img {
+    width: 40%;
+    border: 1px solid #ddd;
+    margin-left: 90px;
+
+}
+
+.details-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 180px;
+    row-gap: 12px;
+    column-gap: 65px;
+
+}
+
+.details-text p {
+    margin: 0px;
+}
+
+.border-country {
+    margin-top: 53px;
+    display: flex;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    gap: 8px;
+
+}
+
+.border-country a {
+    box-shadow: 0 0 9px 0 rgba(-1, 0, 0, 0.2);
+    padding: 5px 24px;
+    border-radius: 4px;
+
+}
+
+.search-filter-container {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 40px;
+    margin-top: 12px;
+    margin-left: 98px
+}
+
+.search-container {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    border-radius: 4px;
+    color: #999;
+    padding-inline: 24px;
+    background-color: var(--element-color);
+    color: var(--text-color);
+
+}
+
+.theme {
+    cursor: pointer;
+}
+
+.search-container input {
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 16px;
+    background-color: var(--element-color);
+    color: var(--text-color);
+
+}
+
+.search-container input ::placeholder {
+    color: #999;
+
+}
+
+.filter-by-region {
+    width: 250px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: #999;
+    background-color: var(--element-color);
+    color: var(--text-color);
+
+}
+
+@media(max-width:840px) {
+    .countries-container {
+        justify-content: center;
+    }
+
+    .country-details {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 32px;
+        gap: 16px;
+        margin-left: 43px;
+    }
+
+    .details-text {
+        max-height: unset;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .header-content p {
+        font-size: 12px;
+    }
+
+    .country-details img {
+        width: 87%;
+        max-width: 400px;
+    }
+
+    .search-filter-container {
+        flex-direction: column;
+    }
+
+}

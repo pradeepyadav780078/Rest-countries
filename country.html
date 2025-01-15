@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800,900, " rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="country.js" defer></script>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header-content">
+            <h2 class="title"><a href="/">where in the world?</a></h2>
+        </div>
+    </header>
+    <main>
+        <div class="country-details-container">
+            <span class="back-button" onclick="history.back()">
+                <i class="fa-solid fa-arrow-left-long"></i> Back</span>
+
+            <div class="country-details">
+                <img src=" " alt="">
+                <div class="detail-text-container">
+                    <h1></h1>
+                    <div class="details-text">
+                        <p><b>Native name:</b> <span class="Native-name"> </span></p>
+                        <p><b>population:</b><span class="population"> </span></p>
+                        <p><b>Region:</b><span class="Region"> </span></p>
+                        <p><b>Sub Region:</b> <span class="sub-region"> </span></p>
+                        <p><b>Capital:</b> <span p class="capital"> </span></p>
+                        <p><b>Top Level Domain:</b><span class="top-level-domain"> </span></p>
+                        <p><b>Currencies:</b> <span class="Currencies"> </span></p>
+                        <p><b>Languages:</b><span class="Languages"> </span></p>
+                    </div>
+                    <div class="border-country"> <b>Border Countries:</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
